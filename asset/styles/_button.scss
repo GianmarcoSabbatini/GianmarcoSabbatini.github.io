@@ -1,0 +1,96 @@
+.navItem {
+    position: relative;
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 9999px;
+    border: 1px solid $black;
+    font-family: "Space grotesk";
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $black;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+}
+
+.navItem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -24px;
+    width: 0;
+    height: 100%;
+    background-color: $black;
+    transform: skewX(-45deg);
+    transition: width 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.navItem:hover {
+    color: $white;
+}
+
+.navItem:hover::before {
+    width: 150%;
+}
+
+
+.cta-primary {
+    position: relative;
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: 9999px;
+    border: 1px solid $black;
+    font-family: "Space grotesk";
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: $acid-green;
+    color: $black;
+    text-decoration: none;
+    overflow: hidden;
+    transition: color 0.3s ease-in-out;
+}
+
+.cta-primary::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -24px;
+    width: 0;
+    height: 100%;
+    background-color: $purple;
+    transform: skewX(-45deg);
+    transition: width 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.cta-primary:hover {
+    color: $white;
+}
+
+.cta-primary:hover::before {
+    width: 150%;
+}
+
+
+
+@media (max-width: 1024px) {
+
+.navItemMobile {
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.navItemMobile::before {
+    transition: none;
+    transform: none;
+    background-color: $white;
+    color: $black;
+}
+
+.navItemMobile:hover {
+    color: $black;
+}
+}

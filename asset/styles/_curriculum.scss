@@ -1,0 +1,117 @@
+section.hero {
+    div {
+        border-bottom: 1px solid black;
+        padding: 80px 0;
+        margin: 0 16px;
+    h1 {
+        font-family: $font-display;
+        font-size: $font-size-display-2;
+        color: $black;
+        letter-spacing: -4px;
+        line-height: 90%;
+        text-align: left;
+        font-weight: 400;
+        padding-bottom: 36px;
+        }
+    }
+   }
+
+   section.curriculum {
+    padding: 0;
+    margin: 0;
+    .curriculum-container-grid {
+        .row {
+            border-bottom: 1px solid black;
+            padding: 57px 0;
+            margin: 0 16px;
+            div {
+            h3 {
+                font-family: $font-heading-3;
+                font-size: $font-size-heading-3;
+                }
+            }
+            div {
+                .bodyM {
+                    font-family: $font-body;
+                    font-size: $font-size-body-M;
+                    padding-top: 32px;
+                }
+                .bodyL {
+                    font-family: $font-body;
+                    font-size: $font-size-body-L;
+                    margin: 0;
+                }
+                h2 {
+                    font-family: $font-heading-124;
+                    font-size: $font-size-heading-2;
+                    padding: 16px 0 8px 0;
+                    margin: 0;
+                }
+                h4 {
+                    font-family: $font-heading-124;
+                    font-size: $font-size-heading-4;
+                }
+            }
+            .margineTop80 {
+                margin-top: 80px!important;
+            }
+        }
+    }
+   }
+
+
+ @media (max-width: 1024px) {
+
+   section.hero {
+    div {
+        padding: 40px 0;
+    h1 {
+        font-size: 64px;
+        line-height: 120%;
+        letter-spacing: -3px;
+        }
+    }
+   }
+   section.curriculum {
+    padding: 0 16px;
+    .curriculum-container-grid {
+        .row {
+            padding: 40px 0;
+            margin: 0;
+            div {
+                padding: 0 0 40px 0;
+            h3 {
+                font-size: $font-size-heading-3;
+                }
+            }
+            div {
+                .bodyM {
+                    font-size: 14px;
+                    padding: 6px 0;
+                    margin: 0; 
+                }
+                .bodyL {
+                    font-size: 18px;
+                    margin: 0;
+                }
+                h2 {
+                    font-size: 32px;
+                    margin: 0;
+                    padding: 0;
+                }
+                h3 {
+                    font-size: 28px;
+                    margin-bottom: 40px;
+                }
+                h4 {
+                    font-size: $font-size-body-L;
+                }
+            }
+            .margineTop80 {
+                margin-top: 0!important;
+                padding: 0;
+            }
+        }
+    }
+   }
+}

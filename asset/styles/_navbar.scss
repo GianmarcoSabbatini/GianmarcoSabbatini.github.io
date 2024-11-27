@@ -1,0 +1,121 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 8px 16px; 
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.myName span {
+    text-transform: uppercase;
+    font-family: $font-navigation;
+    font-size: $font-size-navigation;
+    a {
+        text-decoration: none;
+        color: $black;
+    }
+}
+
+.menu-button {
+    display: none;
+    font-size: $font-size-navigation;
+    font-family: $font-navigation;
+    padding: 8px 24px;
+    border: 1px solid $black;
+    border-radius: 9999px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.navItemGroup {
+    display: flex;
+    list-style: none;
+}
+
+.navItemGroup ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navItemGroup ul li {
+    padding: 8px 24px;
+}
+
+.navItemGroup ul li a {
+    text-decoration: none;
+}
+
+#solo-mobile {
+    display: none;
+}
+
+.contattami {
+    display: flex;
+    align-items: center;
+}
+
+.contattami a {
+    text-decoration: none;
+    padding: 8px 24px;
+    border: 1px solid #000;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+}
+
+.contattami span a:hover {
+    background-color: #f0f0f0;
+}
+
+
+@media (max-width: 1024px) {
+    .navItemGroup {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        flex-direction: column; 
+        transition: none;
+        border-bottom: 1px solid black;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .menu-toggle:checked ~ .navItemGroup {
+        display: flex;
+    }
+
+    #solo-mobile {
+        display: flex;
+    }
+
+    .navItemGroup ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navItemGroup ul li {
+        margin: 8px 0;
+        padding: 8px 16px;
+    }
+
+    .contattami {
+        display: none;
+    }
+}

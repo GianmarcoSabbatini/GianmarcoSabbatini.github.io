@@ -1,0 +1,351 @@
+@import "reset";
+@import "variables";
+@import "button";
+@import "scroller";
+@import "navbar";
+@import "footer";
+@import "responsive";
+@import "curriculum";
+@import "contattami";
+
+
+
+
+/*======MAIN=======PRESENTAZIONE=======INIZIO*/
+    .presentazione-titolo {
+        text-align: left;
+        width: 100%;
+        
+
+        h1 {
+            font-family: $font-display;
+            font-size: $font-size-display-1;
+            line-height: 90%;
+            letter-spacing: -10px;
+            color: $black;
+            overflow-wrap: break-word;
+            animation: entrataH1 2s forwards;
+
+            @keyframes entrataH1 {
+                from {opacity: 0;}
+                to {opacity: 100%;}
+            }
+        }
+    }
+
+    .presentazione-flex {
+        display: flex;
+        padding: 16px;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    .presentazione-testo {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        
+
+        h2 {
+            font-family: $font-heading-124;
+            font-size: $font-size-heading-2;
+            line-height: 110%;
+            text-align: left;
+            font-weight: 400;
+
+            #fsd {
+                color: $purple;
+            }
+        }
+
+        p {
+            color:#B7B7B7;
+            font-size: 14px;
+            text-transform: uppercase;
+            line-height: 110%;
+            letter-spacing: 3px;
+            font-family: $font-body;
+        }
+
+        
+    }
+
+    .presentazione-foto {
+        width: 48%;
+        text-align: center;
+        position: relative;
+        top: -150px;
+        animation: entrataImg 1s forwards;
+        rotate: 4.6deg;
+        
+
+        @keyframes entrataImg {
+            from {left: 100%;
+            transform: rotate(-360deg);}
+            to {left: 0px;}
+        } 
+    }
+
+/*======MAIN=======PRESENTAZIONE=======FINE*/
+
+
+
+/*======MAIN=======BIO=======INIZIO*/
+
+.bio {
+    display: block;
+    width: 50%;
+    float: right;
+    margin-bottom: 160px;
+    margin-right: 80px; 
+    
+    p {
+        font-family: $font-body;
+        font-size: $font-size-body-L;
+        line-height: 120%;
+        margin: 24px auto;
+        color: $dark-grey;
+    }
+    
+    h1 {
+        font-family: $font-heading-124;
+        font-size: $font-size-heading-1;
+        font-weight: 400;
+        line-height: 120%;
+    }
+
+     #canale-github {
+        font-family: $font-button;
+        font-size: $font-size-button;
+        color: $purple;
+        text-transform: uppercase;
+        line-height: 120%;
+     }
+}
+
+ 
+ /*======MAIN=======BIO=======FINE*/
+
+ /*======MAIN=======PROGETTI=======INIZIO*/
+
+ .progetti {
+    box-sizing: border-box;
+    display: block;
+    clear: both;
+    width: 100%;
+    margin: 0 auto 160px auto;
+    padding: 8px 16px;
+}
+
+.progetti h3 {
+    font-family: $font-heading-3;
+    font-size: $font-size-heading-3;
+    line-height: 120%;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+
+.progetti #bodyL {
+    font-family: $font-body;
+    font-size: $font-size-body-L;
+    color: $dark-grey;
+}
+
+.progetti .container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-column-gap: 24px;
+    grid-row-gap:24px;
+    margin-top: 64px; 
+    margin: 64px auto 0 auto;
+}
+
+.progetti .container-grid .container-projects {
+display: flex;
+flex-direction: column;
+width: auto;
+margin-bottom: 64px;
+overflow: hidden;
+}
+
+.progetti .container-grid .container-projects #bodyL {
+    font-family: $font-body;
+    font-size: $font-size-body-L;
+    margin-bottom: 8px;
+    color: $black;
+}
+
+.progetti .container-grid .container-projects #bodyM {
+    font-family: $font-body;
+    font-size: $font-size-body-M;
+    color: $dark-grey;
+    margin-bottom: 16px;
+    a {
+        text-decoration: none;
+        color: $dark-grey;
+    }
+}
+
+.progetti .container-grid .container-projects ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+   
+}
+
+.progetti .container-grid .container-projects ul li {
+    color: $purple;
+    font-family: $font-caption;
+    font-size: $font-size-caption;
+    border: 1px solid $purple;
+    border-radius: 9999px;
+    padding: 5px 16px;
+    margin: 0 21px 0 0 ;
+}
+
+.progetti .container-grid .container-projects img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+/*======MAIN=======PROGETTI=======FINE*/
+
+/*======MAIN=======SU DI ME=======INIZIO*/
+
+.suDiMe {
+    margin: 0 0 140px 0;
+    padding: 8px 16px;
+
+    .suDiMe-testo {
+        h3{
+            font-family: $font-heading-3;
+            font-size: $font-size-heading-3;
+            line-height: 120%;
+            font-weight: 500;
+        }
+        p {
+            font-family: $font-body;
+            font-size: $font-size-body-L;
+            line-height: 120%;
+            color: $dark-grey;
+            padding-bottom: 40px;
+        }
+    }
+
+    .container-schede {
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            grid-column-gap: 24px;
+
+            .scheda{
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
+                padding: 24px;
+                background-color: #4B00E9;
+                margin-bottom: 16px;
+
+                #schedaCommento {
+                    font-family: $font-body;
+                    font-size: $font-size-body-M;
+                    padding-bottom: 24px;
+                    color: $white; 
+                }
+
+                img {
+                    width: 58px;
+                    height: 58px;
+                    border-radius: 50%;
+                }
+
+                h4 {
+                    font-family: $font-heading-124;
+                    font-size: $font-size-heading-4;
+                    font-weight: 500;
+                    line-height: 120%;
+                    padding-bottom: 24px;
+                    color: $white;   
+                }
+
+                #bio {
+                    display: inline-flex;
+                    padding-bottom: 24px;
+                    }
+                    p {
+                        margin-bottom: 0;
+                        align-content: center;
+                        font-family: $font-body;
+                        font-size: $font-size-body-M;
+                        line-height: 140%;
+                        padding-left: 13px;
+                        color: $white;
+                        a{
+                            color: $white;
+                        }   
+                }
+            }
+    }
+}
+
+/*======MAIN=======SU DI ME=======FINE*/
+
+/*======MAIN=======LA MIA STORIA=======INIZIO*/
+
+.laMiaStoria {
+    padding: 8px 16px;
+    > div {
+        margin-bottom: 42px;
+    }
+    h3 {
+        font-family: $font-heading-3;
+        font-size: $font-size-heading-3;
+        font-weight: 500;
+        line-height: 120%;
+    }
+    
+    p {
+        font-family: $font-body;
+        font-size: $font-size-body-L;
+        font-weight: 400;
+        color: $dark-grey;
+        line-height: 150%;
+        padding-bottom: 8px;
+    }
+    
+    .laMiaStoria-container {
+        display: inline-flex;
+        justify-content: space-between;
+
+        .laMiaStoria-foto {
+            img {
+                transition: 1s ease;
+                padding-left: 16px;
+                rotate: 4.6deg;
+            }
+            img:hover{
+                -webkit-transform: rotateZ(-4deg);
+                -ms-transform: rotateZ(-4deg);
+                transform: rotateZ(-4deg);
+                transition: 1s ease;
+                }
+           
+        }
+        
+        .laMiaStoria-testo {
+            margin-top: 40px;
+            margin-left: 50px;
+            margin-right: 10rem ;
+            font-family: $font-body;
+            font-size: $font-size-body-L;
+            color: $dark-grey;
+        }  
+    }
+}
+
+
+/*======MAIN=======LA MIA STORIA=======FINE*/

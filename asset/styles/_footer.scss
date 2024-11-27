@@ -1,0 +1,41 @@
+footer {
+    padding: 8px 16px;
+    margin-top: 80px;
+    background-color: $black;
+    color: white;
+
+    .footer-contattami-container {
+        border-bottom: solid 1px white;
+        padding: 64px 0;
+        margin-bottom: 24px;
+
+        .footer-testo {
+            h3 {
+                font-family: $font-heading-3;
+                font-size: $font-size-heading-3;
+            }
+            p {
+                font-family: $font-body;
+                font-size: $font-size-body-L;
+            }
+        }
+    } 
+
+    .footer-copyright {
+        font-family: $font-caption;
+        font-size: $font-size-caption;
+    }
+
+    .footer-social ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+
+        li a {
+            margin: 0;
+            color: $acid-green;
+            padding-right: 16px;
+            font-family: $font-button;
+           }
+    }
+}

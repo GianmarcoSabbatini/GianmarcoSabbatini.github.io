@@ -1,0 +1,192 @@
+@media (max-width: 1024px) {
+    
+/*======MAIN=======NAV=======INIZIO*/
+.nav-container {
+        padding-bottom: 8px;
+    }
+/*======MAIN=======NAV=======FINE*/ 
+/*======MAIN=======PRESENTAZIONE=======INIZIO*/
+section.presentazione  {
+    .presentazione-titolo {
+        padding: 8px 16px;
+        h1{
+            font-size: 64px;
+            letter-spacing: -3px;
+            font-weight: 400;
+        }
+    }
+    .presentazione-flex {
+        display: flex;
+        margin-bottom: 80px;
+        .presentazione-testo {
+            width: 70%;
+            h2 {
+                font-size: 24px;
+                line-height: 120%;
+            }
+            p {
+                font-size: 8px;
+            }
+        }
+        .presentazione-foto {
+            width: 30%;
+            img {
+                width: 100%;
+                height: auto;
+                top: 150px;
+                position: relative;
+            }
+        }
+    }
+}
+/*======MAIN=======PRESENTAZIONE=======INIZIO*/
+/*======MAIN=======BIO=======INIZIO*/
+section.presentazione > div.bio {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 80px;
+        padding: 0 16px;
+            h1 {
+            font-size: 36px;
+            }
+            p {
+            font-size: $font-size-body-M;
+            }
+    }
+/*======MAIN=======BIO=======FINE*/   
+
+/*======MAIN=======PROGETTI=======INIZIO*/
+section.progetti {
+    margin-bottom: 80px;
+    div {
+        margin-bottom: 24px;
+        h3 {
+         font-size: 28px;
+         color: $black;
+         margin-bottom: 08px;   
+        }
+        #bodyL {
+            font-size: $font-size-body-M;
+        }
+    }
+    .container-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+        grid-column-gap: 4px;
+        grid-row-gap: 0;
+        margin-top: 24px;
+
+        .container-projects {
+            margin-bottom: 0px;
+            img {margin-bottom: 16px;
+            }
+            #bodyM {
+                margin-bottom: 8px;
+            }
+        }
+}
+}
+/*======MAIN=======PROGETTI=======FINE*/
+/*======MAIN=======SU DI ME=======INIZIO*/
+
+section.suDiMe {
+     margin-bottom: 80px;
+    .suDiMe-testo {
+        h3 {
+            font-size: 28px;
+        }
+        p {
+            font-size: $font-size-body-M;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+    }
+}
+section.suDiMe .container-schede .scheda {
+    h4 {
+        font-size:$font-size-body-L;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+    }
+    #bio {
+        padding: 16px 0;
+        p {
+            font-size: 14px;   
+        }
+    }
+    #schedaCommento {
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+    }
+}
+/*======MAIN=======SU DI ME=======FINE*/
+
+/*======MAIN=======LA MIA STORIA=======INIZIO*/
+
+section.laMiaStoria {
+    div {
+        margin: 0;
+        h3 {
+            font-size: 28px;
+        }
+        p {
+            font-size: $font-size-body-M;
+            line-height: 140%;
+        }
+    }
+    .laMiaStoria-container {
+        display: block;
+        .laMiaStoria-foto {
+            text-align: center;
+            margin-bottom: 24px;
+            img {
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+        .laMiaStoria-testo {
+            margin: 0;
+            padding: 8px 16px;
+            p {
+                font-size: $font-size-body-M;
+            }
+        }
+    }
+}
+/*======MAIN=======LA MIA STORIA=======FINE*/
+/*======MAIN=======SCROLLER=======INIZIO*/
+.a-section-marquee-box h2, .b-section-marquee-box h2 {
+    font-size: 3rem;
+}
+.a-section-marquee-box, .b-section-marquee-box {
+    height: auto;
+}
+/*======MAIN=======SCROLLER=======FINE*/
+/*======MAIN=======FOOTER=======INIZIO*/
+footer {
+    margin-top: 80px;
+    .footer-contattami-container {
+        padding-top: 56px;
+        .footer-testo {
+            h3 {
+                font-size: 28px;
+            }
+            p {
+                font-size: $font-size-body-M;
+                padding-bottom: 40px;
+            }
+        }
+    }
+}
+/*======MAIN=======FOOTER=======FINE*/
+
+
+/*======CURRICULUM=======INIZIO*/
+
+
+
+
+}

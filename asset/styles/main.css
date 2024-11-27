@@ -1,0 +1,1030 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+  scrollbar-color: #BFFF58 #ffffff;
+}
+
+.navItem {
+  position: relative;
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 9999px;
+  border: 1px solid #000000;
+  font-family: "Space grotesk";
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.navItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 0;
+  height: 100%;
+  background-color: #000000;
+  transform: skewX(-45deg);
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.navItem:hover {
+  color: #FFFFFF;
+}
+
+.navItem:hover::before {
+  width: 150%;
+}
+
+.cta-primary {
+  position: relative;
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 9999px;
+  border: 1px solid #000000;
+  font-family: "Space grotesk";
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #BFFF58;
+  color: #000000;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+}
+
+.cta-primary::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -24px;
+  width: 0;
+  height: 100%;
+  background-color: #4B00E9;
+  transform: skewX(-45deg);
+  transition: width 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.cta-primary:hover {
+  color: #FFFFFF;
+}
+
+.cta-primary:hover::before {
+  width: 150%;
+}
+
+@media (max-width: 1024px) {
+  .navItemMobile {
+    border: none;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+  .navItemMobile::before {
+    transition: none;
+    transform: none;
+    background-color: #FFFFFF;
+    color: #000000;
+  }
+  .navItemMobile:hover {
+    color: #000000;
+  }
+}
+.a-section {
+  font-family: "Space Grotesk";
+}
+
+.a-section-marquee-box {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.a-section-marquee-box h2 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-size: 7em;
+  font-weight: 100;
+  flex-shrink: 0;
+  color: black;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  transform: translateX(0);
+  animation: a-text-scroll 35s linear infinite;
+}
+
+@keyframes a-text-scroll {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0%, 0, 0);
+  }
+}
+.b-section {
+  font-family: "Space Grotesk";
+}
+
+.b-section-marquee-box {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.b-section-marquee-box h2 {
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #000000;
+  font-size: 7em;
+  font-weight: 100;
+  flex-shrink: 0;
+  color: black;
+  width: -moz-max-content;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  transform: translateX(0);
+  animation: b-text-scroll 35s linear infinite;
+}
+
+@keyframes b-text-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+  padding: 8px 16px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+}
+
+.myName span {
+  text-transform: uppercase;
+  font-family: "Manrope";
+  font-size: 20px;
+}
+.myName span a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.menu-button {
+  display: none;
+  font-size: 20px;
+  font-family: "Manrope";
+  padding: 8px 24px;
+  border: 1px solid #000000;
+  border-radius: 9999px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.navItemGroup {
+  display: flex;
+  list-style: none;
+}
+
+.navItemGroup ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navItemGroup ul li {
+  padding: 8px 24px;
+}
+
+.navItemGroup ul li a {
+  text-decoration: none;
+}
+
+#solo-mobile {
+  display: none;
+}
+
+.contattami {
+  display: flex;
+  align-items: center;
+}
+
+.contattami a {
+  text-decoration: none;
+  padding: 8px 24px;
+  border: 1px solid #000;
+  border-radius: 9999px;
+  transition: background-color 0.3s;
+}
+
+.contattami span a:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 1024px) {
+  .navItemGroup {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    transition: none;
+    border-bottom: 1px solid black;
+  }
+  .menu-button {
+    display: block;
+  }
+  .menu-toggle:checked ~ .navItemGroup {
+    display: flex;
+  }
+  #solo-mobile {
+    display: flex;
+  }
+  .navItemGroup ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navItemGroup ul li {
+    margin: 8px 0;
+    padding: 8px 16px;
+  }
+  .contattami {
+    display: none;
+  }
+}
+footer {
+  padding: 8px 16px;
+  margin-top: 80px;
+  background-color: #000000;
+  color: white;
+}
+footer .footer-contattami-container {
+  border-bottom: solid 1px white;
+  padding: 64px 0;
+  margin-bottom: 24px;
+}
+footer .footer-contattami-container .footer-testo h3 {
+  font-family: "Space Grotesk";
+  font-size: 40px;
+}
+footer .footer-contattami-container .footer-testo p {
+  font-family: "Manrope";
+  font-size: 24px;
+}
+footer .footer-copyright {
+  font-family: "Space Grotesk";
+  font-size: 14px;
+}
+footer .footer-social ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+footer .footer-social ul li a {
+  margin: 0;
+  color: #BFFF58;
+  padding-right: 16px;
+  font-family: "Space Grotesk";
+}
+
+@media (max-width: 1024px) {
+  /*======MAIN=======NAV=======INIZIO*/
+  .nav-container {
+    padding-bottom: 8px;
+  }
+  /*======MAIN=======NAV=======FINE*/
+  /*======MAIN=======PRESENTAZIONE=======INIZIO*/
+  section.presentazione .presentazione-titolo {
+    padding: 8px 16px;
+  }
+  section.presentazione .presentazione-titolo h1 {
+    font-size: 64px;
+    letter-spacing: -3px;
+    font-weight: 400;
+  }
+  section.presentazione .presentazione-flex {
+    display: flex;
+    margin-bottom: 80px;
+  }
+  section.presentazione .presentazione-flex .presentazione-testo {
+    width: 70%;
+  }
+  section.presentazione .presentazione-flex .presentazione-testo h2 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  section.presentazione .presentazione-flex .presentazione-testo p {
+    font-size: 8px;
+  }
+  section.presentazione .presentazione-flex .presentazione-foto {
+    width: 30%;
+  }
+  section.presentazione .presentazione-flex .presentazione-foto img {
+    width: 100%;
+    height: auto;
+    top: 150px;
+    position: relative;
+  }
+  /*======MAIN=======PRESENTAZIONE=======INIZIO*/
+  /*======MAIN=======BIO=======INIZIO*/
+  section.presentazione > div.bio {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 80px;
+    padding: 0 16px;
+  }
+  section.presentazione > div.bio h1 {
+    font-size: 36px;
+  }
+  section.presentazione > div.bio p {
+    font-size: 18px;
+  }
+  /*======MAIN=======BIO=======FINE*/
+  /*======MAIN=======PROGETTI=======INIZIO*/
+  section.progetti {
+    margin-bottom: 80px;
+  }
+  section.progetti div {
+    margin-bottom: 24px;
+  }
+  section.progetti div h3 {
+    font-size: 28px;
+    color: #000000;
+    margin-bottom: 8px;
+  }
+  section.progetti div #bodyL {
+    font-size: 18px;
+  }
+  section.progetti .container-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-column-gap: 4px;
+    grid-row-gap: 0;
+    margin-top: 24px;
+  }
+  section.progetti .container-grid .container-projects {
+    margin-bottom: 0px;
+  }
+  section.progetti .container-grid .container-projects img {
+    margin-bottom: 16px;
+  }
+  section.progetti .container-grid .container-projects #bodyM {
+    margin-bottom: 8px;
+  }
+  /*======MAIN=======PROGETTI=======FINE*/
+  /*======MAIN=======SU DI ME=======INIZIO*/
+  section.suDiMe {
+    margin-bottom: 80px;
+  }
+  section.suDiMe .suDiMe-testo h3 {
+    font-size: 28px;
+  }
+  section.suDiMe .suDiMe-testo p {
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  section.suDiMe .container-schede .scheda h4 {
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+  }
+  section.suDiMe .container-schede .scheda #bio {
+    padding: 16px 0;
+  }
+  section.suDiMe .container-schede .scheda #bio p {
+    font-size: 14px;
+  }
+  section.suDiMe .container-schede .scheda #schedaCommento {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+  /*======MAIN=======SU DI ME=======FINE*/
+  /*======MAIN=======LA MIA STORIA=======INIZIO*/
+  section.laMiaStoria div {
+    margin: 0;
+  }
+  section.laMiaStoria div h3 {
+    font-size: 28px;
+  }
+  section.laMiaStoria div p {
+    font-size: 18px;
+    line-height: 140%;
+  }
+  section.laMiaStoria .laMiaStoria-container {
+    display: block;
+  }
+  section.laMiaStoria .laMiaStoria-container .laMiaStoria-foto {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  section.laMiaStoria .laMiaStoria-container .laMiaStoria-foto img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+  section.laMiaStoria .laMiaStoria-container .laMiaStoria-testo {
+    margin: 0;
+    padding: 8px 16px;
+  }
+  section.laMiaStoria .laMiaStoria-container .laMiaStoria-testo p {
+    font-size: 18px;
+  }
+  /*======MAIN=======LA MIA STORIA=======FINE*/
+  /*======MAIN=======SCROLLER=======INIZIO*/
+  .a-section-marquee-box h2, .b-section-marquee-box h2 {
+    font-size: 3rem;
+  }
+  .a-section-marquee-box, .b-section-marquee-box {
+    height: auto;
+  }
+  /*======MAIN=======SCROLLER=======FINE*/
+  /*======MAIN=======FOOTER=======INIZIO*/
+  footer {
+    margin-top: 80px;
+  }
+  footer .footer-contattami-container {
+    padding-top: 56px;
+  }
+  footer .footer-contattami-container .footer-testo h3 {
+    font-size: 28px;
+  }
+  footer .footer-contattami-container .footer-testo p {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+  /*======MAIN=======FOOTER=======FINE*/
+  /*======CURRICULUM=======INIZIO*/
+}
+section.hero div {
+  border-bottom: 1px solid black;
+  padding: 80px 0;
+  margin: 0 16px;
+}
+section.hero div h1 {
+  font-family: "Space Grotesk";
+  font-size: 120px;
+  color: #000000;
+  letter-spacing: -4px;
+  line-height: 90%;
+  text-align: left;
+  font-weight: 400;
+  padding-bottom: 36px;
+}
+
+section.curriculum {
+  padding: 0;
+  margin: 0;
+}
+section.curriculum .curriculum-container-grid .row {
+  border-bottom: 1px solid black;
+  padding: 57px 0;
+  margin: 0 16px;
+}
+section.curriculum .curriculum-container-grid .row div h3 {
+  font-family: "Space Grotesk";
+  font-size: 40px;
+}
+section.curriculum .curriculum-container-grid .row div .bodyM {
+  font-family: "Manrope";
+  font-size: 18px;
+  padding-top: 32px;
+}
+section.curriculum .curriculum-container-grid .row div .bodyL {
+  font-family: "Manrope";
+  font-size: 24px;
+  margin: 0;
+}
+section.curriculum .curriculum-container-grid .row div h2 {
+  font-family: "Manrope";
+  font-size: 44px;
+  padding: 16px 0 8px 0;
+  margin: 0;
+}
+section.curriculum .curriculum-container-grid .row div h4 {
+  font-family: "Manrope";
+  font-size: 32px;
+}
+section.curriculum .curriculum-container-grid .row .margineTop80 {
+  margin-top: 80px !important;
+}
+
+@media (max-width: 1024px) {
+  section.hero div {
+    padding: 40px 0;
+  }
+  section.hero div h1 {
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: -3px;
+  }
+  section.curriculum {
+    padding: 0 16px;
+  }
+  section.curriculum .curriculum-container-grid .row {
+    padding: 40px 0;
+    margin: 0;
+  }
+  section.curriculum .curriculum-container-grid .row div {
+    padding: 0 0 40px 0;
+  }
+  section.curriculum .curriculum-container-grid .row div h3 {
+    font-size: 40px;
+  }
+  section.curriculum .curriculum-container-grid .row div .bodyM {
+    font-size: 14px;
+    padding: 6px 0;
+    margin: 0;
+  }
+  section.curriculum .curriculum-container-grid .row div .bodyL {
+    font-size: 18px;
+    margin: 0;
+  }
+  section.curriculum .curriculum-container-grid .row div h2 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  section.curriculum .curriculum-container-grid .row div h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  section.curriculum .curriculum-container-grid .row div h4 {
+    font-size: 24px;
+  }
+  section.curriculum .curriculum-container-grid .row .margineTop80 {
+    margin-top: 0 !important;
+    padding: 0;
+  }
+}
+.form {
+  box-sizing: border-box;
+  justify-items: center;
+  margin: 30px 30px;
+  overflow-wrap: anywhere;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+  align-items: flex-start;
+  margin-top: 160px;
+}
+
+.container-form-descrizione {
+  width: 50%;
+  height: auto;
+  padding: 0 50px;
+  color: #4E485A;
+}
+
+.container-form-descrizione h1 {
+  font-size: 64px;
+  font-weight: 500;
+  font-family: "Manrope";
+  color: #000000;
+}
+
+.container-form-descrizione p {
+  font-family: "Manrope";
+  font-size: 24px;
+}
+
+.container-form-input {
+  width: 50%;
+  height: auto;
+  align-content: center;
+}
+
+.container-form ul {
+  display: flex;
+  flex-flow: wrap;
+  float: left;
+  padding-left: 0;
+  box-sizing: border-box;
+}
+
+.container-form ul li {
+  list-style-type: none;
+  font-weight: bold;
+  color: #404040;
+  font-size: 24px;
+  font-family: "Space Grotesk";
+  padding-bottom: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container-form label {
+  display: block;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#messaggio {
+  resize: none;
+  width: 100%;
+  height: 136px;
+  border: 1px solid #4E485A;
+  font-size: inherit;
+  font-family: "Manrope";
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#nomecognome, #Email {
+  border: 1px solid #4E485A;
+  width: 100%;
+  height: 59px;
+  font-size: inherit;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    margin-top: auto;
+  }
+  .container-form-descrizione {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    color: #4E485A;
+  }
+  .container-form-descrizione h1 {
+    font-size: 28px;
+  }
+  .container-form-descrizione p {
+    font-size: 18px;
+  }
+  .container-form label {
+    font-size: 18px;
+  }
+  .container-form-input {
+    width: 100%;
+  }
+  .container-form ul li {
+    list-style-type: none;
+    color: #4E485A;
+    font-size: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+#cta-clean {
+  position: relative;
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 9999px;
+  border: 1px solid #000000;
+  font-family: "Space grotesk";
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: #BFFF58;
+  color: #000000;
+  text-decoration: none;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+  font-weight: 400;
+}
+
+/*======MAIN=======PRESENTAZIONE=======INIZIO*/
+.presentazione-titolo {
+  text-align: left;
+  width: 100%;
+}
+.presentazione-titolo h1 {
+  font-family: "Space Grotesk";
+  font-size: 264px;
+  line-height: 90%;
+  letter-spacing: -10px;
+  color: #000000;
+  overflow-wrap: break-word;
+  animation: entrataH1 2s forwards;
+}
+@keyframes entrataH1 {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.presentazione-flex {
+  display: flex;
+  padding: 16px;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.presentazione-testo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.presentazione-testo h2 {
+  font-family: "Manrope";
+  font-size: 44px;
+  line-height: 110%;
+  text-align: left;
+  font-weight: 400;
+}
+.presentazione-testo h2 #fsd {
+  color: #4B00E9;
+}
+.presentazione-testo p {
+  color: #B7B7B7;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 110%;
+  letter-spacing: 3px;
+  font-family: "Manrope";
+}
+
+.presentazione-foto {
+  width: 48%;
+  text-align: center;
+  position: relative;
+  top: -150px;
+  animation: entrataImg 1s forwards;
+  rotate: 4.6deg;
+}
+@keyframes entrataImg {
+  from {
+    left: 100%;
+    transform: rotate(-360deg);
+  }
+  to {
+    left: 0px;
+  }
+}
+
+/*======MAIN=======PRESENTAZIONE=======FINE*/
+/*======MAIN=======BIO=======INIZIO*/
+.bio {
+  display: block;
+  width: 50%;
+  float: right;
+  margin-bottom: 160px;
+  margin-right: 80px;
+}
+.bio p {
+  font-family: "Manrope";
+  font-size: 24px;
+  line-height: 120%;
+  margin: 24px auto;
+  color: #4E485A;
+}
+.bio h1 {
+  font-family: "Manrope";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bio #canale-github {
+  font-family: "Space Grotesk";
+  font-size: 20px;
+  color: #4B00E9;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+
+/*======MAIN=======BIO=======FINE*/
+/*======MAIN=======PROGETTI=======INIZIO*/
+.progetti {
+  box-sizing: border-box;
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 0 auto 160px auto;
+  padding: 8px 16px;
+}
+
+.progetti h3 {
+  font-family: "Space Grotesk";
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.progetti #bodyL {
+  font-family: "Manrope";
+  font-size: 24px;
+  color: #4E485A;
+}
+
+.progetti .container-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  margin-top: 64px;
+  margin: 64px auto 0 auto;
+}
+
+.progetti .container-grid .container-projects {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin-bottom: 64px;
+  overflow: hidden;
+}
+
+.progetti .container-grid .container-projects #bodyL {
+  font-family: "Manrope";
+  font-size: 24px;
+  margin-bottom: 8px;
+  color: #000000;
+}
+
+.progetti .container-grid .container-projects #bodyM {
+  font-family: "Manrope";
+  font-size: 18px;
+  color: #4E485A;
+  margin-bottom: 16px;
+}
+.progetti .container-grid .container-projects #bodyM a {
+  text-decoration: none;
+  color: #4E485A;
+}
+
+.progetti .container-grid .container-projects ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.progetti .container-grid .container-projects ul li {
+  color: #4B00E9;
+  font-family: "Space Grotesk";
+  font-size: 14px;
+  border: 1px solid #4B00E9;
+  border-radius: 9999px;
+  padding: 5px 16px;
+  margin: 0 21px 0 0;
+}
+
+.progetti .container-grid .container-projects img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/*======MAIN=======PROGETTI=======FINE*/
+/*======MAIN=======SU DI ME=======INIZIO*/
+.suDiMe {
+  margin: 0 0 140px 0;
+  padding: 8px 16px;
+}
+.suDiMe .suDiMe-testo h3 {
+  font-family: "Space Grotesk";
+  font-size: 40px;
+  line-height: 120%;
+  font-weight: 500;
+}
+.suDiMe .suDiMe-testo p {
+  font-family: "Manrope";
+  font-size: 24px;
+  line-height: 120%;
+  color: #4E485A;
+  padding-bottom: 40px;
+}
+.suDiMe .container-schede {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-column-gap: 24px;
+}
+.suDiMe .container-schede .scheda {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: #4B00E9;
+  margin-bottom: 16px;
+}
+.suDiMe .container-schede .scheda #schedaCommento {
+  font-family: "Manrope";
+  font-size: 18px;
+  padding-bottom: 24px;
+  color: #FFFFFF;
+}
+.suDiMe .container-schede .scheda img {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+.suDiMe .container-schede .scheda h4 {
+  font-family: "Manrope";
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 120%;
+  padding-bottom: 24px;
+  color: #FFFFFF;
+}
+.suDiMe .container-schede .scheda #bio {
+  display: inline-flex;
+  padding-bottom: 24px;
+}
+.suDiMe .container-schede .scheda p {
+  margin-bottom: 0;
+  align-content: center;
+  font-family: "Manrope";
+  font-size: 18px;
+  line-height: 140%;
+  padding-left: 13px;
+  color: #FFFFFF;
+}
+.suDiMe .container-schede .scheda p a {
+  color: #FFFFFF;
+}
+
+/*======MAIN=======SU DI ME=======FINE*/
+/*======MAIN=======LA MIA STORIA=======INIZIO*/
+.laMiaStoria {
+  padding: 8px 16px;
+}
+.laMiaStoria > div {
+  margin-bottom: 42px;
+}
+.laMiaStoria h3 {
+  font-family: "Space Grotesk";
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 120%;
+}
+.laMiaStoria p {
+  font-family: "Manrope";
+  font-size: 24px;
+  font-weight: 400;
+  color: #4E485A;
+  line-height: 150%;
+  padding-bottom: 8px;
+}
+.laMiaStoria .laMiaStoria-container {
+  display: inline-flex;
+  justify-content: space-between;
+}
+.laMiaStoria .laMiaStoria-container .laMiaStoria-foto img {
+  transition: 1s ease;
+  padding-left: 16px;
+  rotate: 4.6deg;
+}
+.laMiaStoria .laMiaStoria-container .laMiaStoria-foto img:hover {
+  transform: rotateZ(-4deg);
+  transition: 1s ease;
+}
+.laMiaStoria .laMiaStoria-container .laMiaStoria-testo {
+  margin-top: 40px;
+  margin-left: 50px;
+  margin-right: 10rem;
+  font-family: "Manrope";
+  font-size: 24px;
+  color: #4E485A;
+}
+
+/*======MAIN=======LA MIA STORIA=======FINE*//*# sourceMappingURL=main.css.map */
