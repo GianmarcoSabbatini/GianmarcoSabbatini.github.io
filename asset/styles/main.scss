@@ -146,7 +146,7 @@
     margin-bottom: 16px;
 }
 
-.progetti #bodyL {
+.progetti .bodyL {
     font-family: $font-body;
     font-size: $font-size-body-L;
     color: $dark-grey;
@@ -169,14 +169,14 @@ margin-bottom: 64px;
 overflow: hidden;
 }
 
-.progetti .container-grid .container-projects #bodyL {
+.progetti .container-grid .container-projects .bodyL {
     font-family: $font-body;
     font-size: $font-size-body-L;
     margin-bottom: 8px;
     color: $black;
 }
 
-.progetti .container-grid .container-projects #bodyM {
+.progetti .container-grid .container-projects .bodyM {
     font-family: $font-body;
     font-size: $font-size-body-M;
     color: $dark-grey;
@@ -236,6 +236,9 @@ overflow: hidden;
         }
     }
 
+
+    
+
     .container-schede {
             display:grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -250,7 +253,8 @@ overflow: hidden;
                 background-color: #4B00E9;
                 margin-bottom: 16px;
 
-                #schedaCommento {
+
+                .schedaCommento {
                     font-family: $font-body;
                     font-size: $font-size-body-M;
                     padding-bottom: 24px;
@@ -272,21 +276,23 @@ overflow: hidden;
                     color: $white;   
                 }
 
-                #bio {
+                div {
                     display: inline-flex;
                     padding-bottom: 24px;
-                    }
+                    width: 100%;
+                    margin: 0;
+                    align-content: center;
                     p {
                         margin-bottom: 0;
                         align-content: center;
                         font-family: $font-body;
-                        font-size: $font-size-body-M;
                         line-height: 140%;
                         padding-left: 13px;
                         color: $white;
-                        a{
-                            color: $white;
-                        }   
+                        a {
+                            color: $white; 
+                        }
+                    }
                 }
             }
     }

@@ -379,7 +379,7 @@ footer .footer-social ul li a {
     color: #000000;
     margin-bottom: 8px;
   }
-  section.progetti div #bodyL {
+  section.progetti div .bodyL {
     font-size: 18px;
   }
   section.progetti .container-grid {
@@ -395,7 +395,7 @@ footer .footer-social ul li a {
   section.progetti .container-grid .container-projects img {
     margin-bottom: 8px;
   }
-  section.progetti .container-grid .container-projects #bodyM {
+  section.progetti .container-grid .container-projects .bodyM {
     margin-bottom: 8px;
   }
   /*======MAIN=======PROGETTI=======FINE*/
@@ -417,13 +417,13 @@ footer .footer-social ul li a {
     padding: 0;
     margin: 0;
   }
-  section.suDiMe .container-schede .scheda #bio {
+  section.suDiMe .container-schede .scheda div {
     padding: 16px 0;
   }
-  section.suDiMe .container-schede .scheda #bio p {
+  section.suDiMe .container-schede .scheda div p {
     font-size: 14px;
   }
-  section.suDiMe .container-schede .scheda #schedaCommento {
+  section.suDiMe .container-schede .scheda .schedaCommento {
     font-size: 14px;
     padding: 0;
     margin: 0;
@@ -484,6 +484,89 @@ footer .footer-social ul li a {
   }
   /*======MAIN=======FOOTER=======FINE*/
   /*======CURRICULUM=======INIZIO*/
+  section.hero div {
+    padding: 40px 0;
+  }
+  section.hero div h1 {
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: -3px;
+  }
+  section.curriculum {
+    padding: 0 16px;
+  }
+  section.curriculum .curriculum-container-grid .row {
+    padding: 40px 0;
+    margin: 0;
+  }
+  section.curriculum .curriculum-container-grid .row div {
+    padding: 0 0 40px 0;
+  }
+  section.curriculum .curriculum-container-grid .row div h3 {
+    font-size: 40px;
+  }
+  section.curriculum .curriculum-container-grid .row div .bodyM {
+    font-size: 14px;
+    padding: 6px 0;
+    margin: 0;
+  }
+  section.curriculum .curriculum-container-grid .row div .bodyL {
+    font-size: 18px;
+    margin: 0;
+  }
+  section.curriculum .curriculum-container-grid .row div h2 {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+  }
+  section.curriculum .curriculum-container-grid .row div h3 {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+  section.curriculum .curriculum-container-grid .row div h4 {
+    font-size: 24px;
+  }
+  section.curriculum .curriculum-container-grid .row .margineTop80 {
+    margin-top: 0 !important;
+    padding: 0;
+  }
+  /*======CURRICULUM=======FINE*/
+  /*======CONTATTAMI=======INIZIO*/
+  section.form .container-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+    margin-top: auto;
+  }
+  section.form .container-form label {
+    font-size: 18px;
+  }
+  section.form .container-form .container-form ul li {
+    list-style-type: none;
+    color: #4E485A;
+    font-size: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  section.form .container-form .container-form-input {
+    width: 100%;
+  }
+  section.form .container-form .container-form-descrizione {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    color: #4E485A;
+  }
+  section.form .container-form .container-form-descrizione h1 {
+    font-size: 28px;
+  }
+  section.form .container-form .container-form-descrizione p {
+    font-size: 18px;
+  }
+  /*======CONTATTAMI=======FINE*/
 }
 section.hero div {
   border-bottom: 1px solid black;
@@ -538,54 +621,6 @@ section.curriculum .curriculum-container-grid .row .margineTop80 {
   margin-top: 80px !important;
 }
 
-@media (max-width: 1024px) {
-  section.hero div {
-    padding: 40px 0;
-  }
-  section.hero div h1 {
-    font-size: 64px;
-    line-height: 120%;
-    letter-spacing: -3px;
-  }
-  section.curriculum {
-    padding: 0 16px;
-  }
-  section.curriculum .curriculum-container-grid .row {
-    padding: 40px 0;
-    margin: 0;
-  }
-  section.curriculum .curriculum-container-grid .row div {
-    padding: 0 0 40px 0;
-  }
-  section.curriculum .curriculum-container-grid .row div h3 {
-    font-size: 40px;
-  }
-  section.curriculum .curriculum-container-grid .row div .bodyM {
-    font-size: 14px;
-    padding: 6px 0;
-    margin: 0;
-  }
-  section.curriculum .curriculum-container-grid .row div .bodyL {
-    font-size: 18px;
-    margin: 0;
-  }
-  section.curriculum .curriculum-container-grid .row div h2 {
-    font-size: 32px;
-    margin: 0;
-    padding: 0;
-  }
-  section.curriculum .curriculum-container-grid .row div h3 {
-    font-size: 28px;
-    margin-bottom: 40px;
-  }
-  section.curriculum .curriculum-container-grid .row div h4 {
-    font-size: 24px;
-  }
-  section.curriculum .curriculum-container-grid .row .margineTop80 {
-    margin-top: 0 !important;
-    padding: 0;
-  }
-}
 .form {
   box-sizing: border-box;
   justify-items: center;
@@ -674,42 +709,6 @@ section.curriculum .curriculum-container-grid .row .margineTop80 {
   padding: 10px;
 }
 
-@media only screen and (max-width: 1024px) {
-  .container-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    height: auto;
-    margin-top: auto;
-  }
-  .container-form-descrizione {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    color: #4E485A;
-  }
-  .container-form-descrizione h1 {
-    font-size: 28px;
-  }
-  .container-form-descrizione p {
-    font-size: 18px;
-  }
-  .container-form label {
-    font-size: 18px;
-  }
-  .container-form-input {
-    width: 100%;
-  }
-  .container-form ul li {
-    list-style-type: none;
-    color: #4E485A;
-    font-size: 16px;
-    padding-bottom: 16px;
-    width: 100%;
-    box-sizing: border-box;
-  }
-}
 #cta-clean {
   position: relative;
   display: inline-block;
@@ -850,7 +849,7 @@ section.curriculum .curriculum-container-grid .row .margineTop80 {
   margin-bottom: 16px;
 }
 
-.progetti #bodyL {
+.progetti .bodyL {
   font-family: "Manrope";
   font-size: 24px;
   color: #4E485A;
@@ -873,20 +872,20 @@ section.curriculum .curriculum-container-grid .row .margineTop80 {
   overflow: hidden;
 }
 
-.progetti .container-grid .container-projects #bodyL {
+.progetti .container-grid .container-projects .bodyL {
   font-family: "Manrope";
   font-size: 24px;
   margin-bottom: 8px;
   color: #000000;
 }
 
-.progetti .container-grid .container-projects #bodyM {
+.progetti .container-grid .container-projects .bodyM {
   font-family: "Manrope";
   font-size: 18px;
   color: #4E485A;
   margin-bottom: 16px;
 }
-.progetti .container-grid .container-projects #bodyM a {
+.progetti .container-grid .container-projects .bodyM a {
   text-decoration: none;
   color: #4E485A;
 }
@@ -947,7 +946,7 @@ section.curriculum .curriculum-container-grid .row .margineTop80 {
   background-color: #4B00E9;
   margin-bottom: 16px;
 }
-.suDiMe .container-schede .scheda #schedaCommento {
+.suDiMe .container-schede .scheda .schedaCommento {
   font-family: "Manrope";
   font-size: 18px;
   padding-bottom: 24px;
@@ -966,20 +965,22 @@ section.curriculum .curriculum-container-grid .row .margineTop80 {
   padding-bottom: 24px;
   color: #FFFFFF;
 }
-.suDiMe .container-schede .scheda #bio {
+.suDiMe .container-schede .scheda div {
   display: inline-flex;
   padding-bottom: 24px;
+  width: 100%;
+  margin: 0;
+  align-content: center;
 }
-.suDiMe .container-schede .scheda p {
+.suDiMe .container-schede .scheda div p {
   margin-bottom: 0;
   align-content: center;
   font-family: "Manrope";
-  font-size: 18px;
   line-height: 140%;
   padding-left: 13px;
   color: #FFFFFF;
 }
-.suDiMe .container-schede .scheda p a {
+.suDiMe .container-schede .scheda div p a {
   color: #FFFFFF;
 }
 

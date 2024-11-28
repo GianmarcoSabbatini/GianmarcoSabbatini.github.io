@@ -88,51 +88,6 @@
     padding: 10px;
 }
 
-@media only screen and (max-width: 1024px) {
-
-.container-form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    height: auto;
-    margin-top: auto;
-}
-.container-form-descrizione {
-    width: 100%;
-    height: auto;
-    padding: 0;
-    color: $dark-grey;
-}
-
-
-.container-form-descrizione h1 {
-    font-size: 28px;
-}
-
-.container-form-descrizione p {
-    font-size: $font-size-body-M;
-}
-
-.container-form label{
-    font-size: 18px;
-}
-
-
-.container-form-input {
-    width: 100%;
-}
-
-.container-form ul li {
-    list-style-type: none;
-    color: $dark-grey;
-    font-size: 16px;
-    padding-bottom: 16px;
-    width: 100%;
-    box-sizing: border-box;
-}
-}
-
 #cta-clean {
     position: relative;
     display: inline-block;
