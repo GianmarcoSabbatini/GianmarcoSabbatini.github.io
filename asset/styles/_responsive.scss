@@ -250,6 +250,10 @@ section.form {
         justify-content: center;
         height: auto;
         margin-top: auto;
+        
+        #nomecognome, #Email, #messaggio {
+            font-size: $font-size-body-M  
+        }
 
         label{
             font-size: 18px;
