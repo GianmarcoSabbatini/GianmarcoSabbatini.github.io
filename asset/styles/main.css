@@ -390,10 +390,10 @@ footer .footer-social ul li a {
     margin-top: 24px;
   }
   section.progetti .container-grid .container-projects {
-    margin-bottom: 0px;
+    margin-bottom: 40px;
   }
   section.progetti .container-grid .container-projects img {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
   }
   section.progetti .container-grid .container-projects #bodyM {
     margin-bottom: 8px;
@@ -813,7 +813,7 @@ section.curriculum .curriculum-container-grid .row .margineTop80 {
 .bio p {
   font-family: "Manrope";
   font-size: 24px;
-  line-height: 120%;
+  line-height: 150%;
   margin: 24px auto;
   color: #4E485A;
 }
