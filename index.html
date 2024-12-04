@@ -37,27 +37,27 @@
 </head>
 <body>
    <header>
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="Main Navigation">
             <div class="myName">
-                <span> <a href="">Gianmarco Sabbatini</a></span>
+                <span> <a href="index.html" aria-label="Home">Gianmarco Sabbatini</a></span>
             </div>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" />
             <label for="menu-toggle" class="menu-button">MENU</label>
             <div class="navItemGroup">
                 <ul>
-                    <li><a href="#progetti" class="navItem navItemMobile">Progetti</a></li>
-                    <li><a href="curriculum.html" class="navItem navItemMobile">CV</a></li>
-                    <li><a href="#suDiMe" class="navItem navItemMobile">Su Di Me</a></li>
-                    <li><a href="contattami.html" class="navItem navItemMobile" id="solo-mobile">Contattami</a></li>
+                    <li><a href="#progetti" class="navItem navItemMobile" aria-label="Progetti">Progetti</a></li>
+                    <li><a href="curriculum.html" class="navItem navItemMobile" aria-label="Curriculum">CV</a></li>
+                    <li><a href="#suDiMe" class="navItem navItemMobile" aria-label="Su Di Me">Su Di Me</a></li>
+                    <li><a href="contattami.html" class="navItem navItemMobile" id="solo-mobile" aria-label="Contattami">Contattami</a></li>
                 </ul>
             </div>
             <div class="contattami">
-                <a href="contattami.html" class="bottone-animato cta-primary">Contattami</a>
+                <a href="contattami.html" class="bottone-animato cta-primary" aria-label="Contattami">Contattami</a>
             </div>
         </nav>
     </header>
     <main>
-        <section class="presentazione">
+        <section class="presentazione" aria-label="Presentazione personale">
             <div class="presentazione-titolo">
                 <h1>
                     FULL STACK DEVELOPER
@@ -66,63 +66,61 @@
             <div class="presentazione-flex">
                 <div class="presentazione-testo">
                     <div>
-                        <h2>Sono Gianmarco Sabbatini, un <span id="fsd">Full Stack Developer</span>  di Roma che ama lavorare in team multidisciplinari
-                        </h2>
+                        <h2>Sono Gianmarco Sabbatini, un <span id="fsd">Full Stack Developer</span> di Roma che ama lavorare in team multidisciplinari</h2>
                     </div>
                     <div>
-                        <p> <img src="asset/immagini/scroll-mouse.gif" alt="icona di un mouse" width="40px">scroll to continue</p>
+                        <p><img src="asset/immagini/scroll-mouse.gif" alt="icona di un mouse" width="40px">scroll to continue</p>
                     </div>
                 </div>
-                    <div class="presentazione-foto">
-                        <img src="asset/immagini/GianmarcoSabbatiniFoto-display.png" alt="Foto di Gianmarco Sabbatini">
-                    </div>
+                <div class="presentazione-foto">
+                    <img src="asset/immagini/GianmarcoSabbatiniFoto-display.png" alt="Foto di Gianmarco Sabbatini">
                 </div>
-            <div class="bio">
+            </div>
+            <div class="bio" aria-label="Biografia e link utili">
                 <h1>La tecnologia mi appassiona da sempre.</h1>
-                <p>Nella mia vita ho fatto tanti lavori diversi e questo mi ha permesso di imparare a non abbattermi mai di fronte a una difficoltà e che imparare a fare cose nuove è sempre un’avventura stimolante.
-                </p>
+                <p>Nella mia vita ho fatto tanti lavori diversi e questo mi ha permesso di imparare a non abbattermi mai di fronte a una difficoltà e che imparare a fare cose nuove è sempre un'avventura stimolante.</p>
                 <p>
                     <img src="asset/immagini/github_icon.png" alt="icona github">
-                    <a href="https://github.com/GianmarcoSabbatini" target="_blank" id="canale-github"> Il mio canale github</a>
+                    <a href="https://github.com/GianmarcoSabbatini" target="_blank" id="canale-github" aria-label="Visita il mio profilo GitHub">Il mio canale github</a>
                 </p>
-                <a href="curriculum.html" class="cta-primary">VAI AL MIO CURRICULUM</a>
+                <a href="curriculum.html" class="cta-primary" aria-label="Vai alla pagina del curriculum">VAI AL MIO CURRICULUM</a>
             </div>
         </section>
-        <section class="progetti" id="progetti">
+        <section class="progetti" id="progetti" aria-label="I miei progetti">
             <div>
                <h3>PROGETTI</h3> 
                <p class="bodyL">Una selezione di progetti che ho curato.</p>
             </div>
             <div class="container-grid">
-                <div class="container-projects">
+                <div class="container-projects" aria-label="Progetto Windrose">
                     <img src="asset/immagini/project-windrose.jpg" alt="Ragazzo con felpa nera">
                     <p class="bodyL">Windrose</p>
-                    <p class="bodyM"><a href="http://www.windroseshop.com">windroseshop.com</a></p>
-                    <ul>
+                    <p class="bodyM"><a href="http://www.windroseshop.com" aria-label="Visita il sito Windrose shop">windroseshop.com</a></p>
+                    <ul aria-label="Tecnologie utilizzate">
                         <li><span>HTML</span></li>
                         <li><span>CSS</span></li>
                         <li><span>WORDPRESS</span></li>
                     </ul>
                 </div>
-                <div class="container-projects">
+                <div class="container-projects" aria-label="Progetto Demetra">
                     <img src="asset/immagini/project-demetra.jpg" alt="uomo che cammina nella foresta">
                     <p class="bodyL">Demetra</p>
                     <p class="bodyM">Esercitazione per il corso Start2Impact</p>
-                    <ul>
+                    <ul aria-label="Tecnologie utilizzate">
                         <li><span>HTML</span></li>
                         <li><span>CSS</span></li>
                     </ul>
                 </div>
-                <div class="container-projects">
+                <div class="container-projects" aria-label="Progetto Clean Earth">
                     <img src="asset/immagini/project-cleanearth.jpg" alt="persona che ricicla plastica">
                     <p class="bodyL">Clean Earth</p>
                     <p class="bodyM">Esercitazione per il corso Start2Impact</p>
-                    <ul>
+                    <ul aria-label="Tecnologie utilizzate">
                         <li><span>HTML</span></li>
                         <li><span>CSS</span></li>
                     </ul>
                 </div>
-                <div class="container-projects">
+                <div class="container-projects" aria-label="Progetto World of Warcraft">
                     <img src="asset/immagini/project-wow.png" alt="personaggio di World of Warcraft">
                     <p class="bodyL">World of Warcraft</p>
                     <p class="bodyM">Beh, dovevo parlare di passioni, no?</p>
@@ -134,37 +132,37 @@
                 </div>
             </div>
         </section>
-        <section class="suDiMe" id="suDiMe">
+        <section class="suDiMe" id="suDiMe" aria-label="Testimonianze su di me">
             <div class="suDiMe-testo">
                 <h3>SU DI ME</h3>
                 <p>Ma raccontato dalle persone con cui ho lavorato</p>
             </div>
-            <div class="container-schede">
-                <div class="scheda">
+            <div class="container-schede" aria-label="Raccolta testimonianze">
+                <div class="scheda" aria-label="Testimonianza di Silvia Colantoni">
                     <h4>Non ha paura delle sfide e di imparare cose nuove!</h4>
                     <div>
                         <img src="asset/immagini/su-di-me-silvia-colantoni.jpg" alt="Foto di Silvia Colantoni">
                         <p>Silvia Colantoni <br>
-                        Design Lead @ <a href="https://imille.co/">IMILLE</a>
+                        Design Lead @ <a href="https://imille.co/" aria-label="Sito web di IMILLE">IMILLE</a>
                         </p>
                     </div>
                     <p class="schedaCommento">Gianmarco è spinto da una fortissima passione per la tecnologia ed è la persona ideale con cui avviare un progetto: entusiasta, serio, attento al dettaglio, sa essere la persona chiave per portare a termine con successo un progetto.
                         Gli auguro il meglio per la sua carriera da programmatore!
                     </p>
                 </div>
-                <div class="scheda">
+                <div class="scheda" aria-label="Testimonianza di Davide Passa">
                     <h4>Disponibilità e passione sono i suoi superpoteri</h4>
                     <div>
                         <img src="asset/immagini/su-di-me-davide-passa.jpg" alt="Foto di Davide Passa">
                         <p>Davide Passa <br>
-                        Manager @ <a href="https://www.windroseshop.com/">WINDROSE</a>
+                        Manager @ <a href="https://www.windroseshop.com/" aria-label="Sito web di Windrose">WINDROSE</a>
                         </p>
                     </div>
                     <p class="schedaCommento">Ho avuto la fortuna di lavorare con Gianmarco negli ultimi anni su vari progetti ed è la risorsa che più di tutti ha saputo far tesoro delle esperienze per trasformarle in competenze, crescendo e permettendo al team di crescere di conseguenza.
                         Una certezza nel team!
                     </p>
                 </div>
-                <div class="scheda">
+                <div class="scheda" aria-label="Testimonianza di Marco Bucciarelli">
                     <h4>Un professionista sempre attento al fattore umano</h4>
                     <div>
                         <img src="asset/immagini/su-di-me-marco-bucciarelli.jpg" alt="Foto di Marco Bucciarelli">
@@ -214,27 +212,27 @@
         </section>
   </main>
 
- <footer>
+  <footer>
     <div class="footer-contattami-container flex d-xl-flex d-lg-flex d-md-flex flex-sm-row justify-content-between align-items-center">
         <div class="footer-testo">
             <h3>FACCIAMOCI UNA CHIACCHIERATA</h3>
             <p>Non vedo l’ora di sentire cosa possiamo creare insieme! </p>
         </div>
         <div class="footer-bottone">
-            <a href="contattami.html" class="cta-primary">CONTATTAMI</a>
+            <a href="contattami.html" class="cta-primary" aria-label="Pagina Contattami">CONTATTAMI</a>
         </div>
     </div>
     <div class="flex d-xl-flex d-lg-flex d-md-flex flex-sm-row justify-content-between">
         <div class="footer-copyright">
-         <p>COPYRIGHT</p>   
+            <p>COPYRIGHT</p>   
         </div>
         <div class="footer-social">
-          <ul>
-            <li><a href="https://www.linkedin.com/in/gianmarcosabbatini/" target="_blank">LINKEDIN</a></li>
-            <li><a href="https://github.com/GianmarcoSabbatini" target="_blank">GITHUB</a></li>
-          </ul>  
+            <ul>
+                <li><a href="https://www.linkedin.com/in/gianmarcosabbatini/" target="_blank" aria-label="LinkedIn di Gianmarco Sabbatini">LINKEDIN</a></li>
+                <li><a href="https://github.com/GianmarcoSabbatini" target="_blank" aria-label="GitHub di Gianmarco Sabbatini">GITHUB</a></li>
+            </ul>  
         </div>
     </div>
- </footer>
+</footer>
 </body>
 </html>

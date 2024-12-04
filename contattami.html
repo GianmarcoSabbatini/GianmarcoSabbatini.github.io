@@ -40,22 +40,22 @@
 </head>
 <body>
     <header>
-        <nav class="nav-container">
+        <nav class="nav-container" aria-label="Main Navigation">
             <div class="myName">
-                <span> <a href="/index.html">Gianmarco Sabbatini</a></span>
+                <span> <a href="index.html" aria-label="Home">Gianmarco Sabbatini</a></span>
             </div>
-            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Toggle Menu" />
             <label for="menu-toggle" class="menu-button">MENU</label>
             <div class="navItemGroup">
                 <ul>
-                    <li><a href="index.html#progetti" class="navItem navItemMobile">Progetti</a></li>
-                    <li><a href="curriculum.html" class="navItem navItemMobile">CV</a></li>
-                    <li><a href="index.html#SuDiMe" class="navItem navItemMobile">Su Di Me</a></li>
-                    <li><a href="contattami.html" class="navItem navItemMobile" id="solo-mobile">Contattami</a></li>
+                    <li><a href="#progetti" class="navItem navItemMobile" aria-label="Progetti">Progetti</a></li>
+                    <li><a href="curriculum.html" class="navItem navItemMobile" aria-label="Curriculum">CV</a></li>
+                    <li><a href="#suDiMe" class="navItem navItemMobile" aria-label="Su Di Me">Su Di Me</a></li>
+                    <li><a href="contattami.html" class="navItem navItemMobile" id="solo-mobile" aria-label="Contattami">Contattami</a></li>
                 </ul>
             </div>
             <div class="contattami">
-                <a href="contattami.html" class="cta-primary">Contattami</a>
+                <a href="contattami.html" class="bottone-animato cta-primary" aria-label="Contattami">Contattami</a>
             </div>
         </nav>
     </header>
@@ -68,25 +68,31 @@
                          Scrivimi qualche info in merito!</p>
                 </div>
                 <div class="container-form-input">
-                    <form id="contact-form">
+                    <form id="contact-form" aria-label="Form di contatto">
                         <ul>
                             <li>
                                 <label class="label" for="nomecognome">Nome e Cognome</label>
-                                <input type="text" class="input" name="nomecognome" id="nomecognome"required>
+                                <input type="text" class="input" name="nomecognome" id="nomecognome" required 
+                                       aria-label="Inserisci il tuo nome e cognome" 
+                                       aria-required="true">
                             </li>
                             <li>
                                 <label for="Email">Email</label>
-                                <input type="email" name="Email" id="Email" required>
+                                <input type="email" name="Email" id="Email" required 
+                                       aria-label="Inserisci la tua email" 
+                                       aria-required="true">
                             </li>
                             <li id="box-messaggio">
                                 <label for="messaggio">Come posso aiutarti?</label>
-                                <textarea id="messaggio" name="messaggio" required></textarea> 
+                                <textarea id="messaggio" name="messaggio" required 
+                                          aria-label="Inserisci il tuo messaggio"
+                                          aria-required="true"></textarea> 
                             </li>
                             <li>
-                             <button id="cta-clean" type="submit" onclick="sendMail()">Invia Email</button> 
+                             <button id="cta-clean" type="submit" onclick="sendMail()" 
+                                     aria-label="Invia il modulo">Invia Email</button> 
                             </li>
                         </ul>
-                        
                     </form>
                 </div>
             </div>
@@ -99,20 +105,20 @@
                 <p>Non vedo l’ora di sentire cosa possiamo creare insieme! </p>
             </div>
             <div class="footer-bottone">
-                <a href="contattami.html" class="cta-primary">CONTATTAMI</a>
+                <a href="contattami.html" class="cta-primary" aria-label="Pagina Contattami">CONTATTAMI</a>
             </div>
         </div>
         <div class="flex d-xl-flex d-lg-flex d-md-flex flex-sm-row justify-content-between">
             <div class="footer-copyright">
-             <p>COPYRIGHT</p>   
+                <p>COPYRIGHT</p>   
             </div>
             <div class="footer-social">
-              <ul>
-                <li><a href="https://www.linkedin.com/in/gianmarcosabbatini/" target="_blank">LINKEDIN</a></li>
-                <li><a href="https://github.com/GianmarcoSabbatini" target="_blank">GITHUB</a></li>
-              </ul>  
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/gianmarcosabbatini/" target="_blank" aria-label="LinkedIn di Gianmarco Sabbatini">LINKEDIN</a></li>
+                    <li><a href="https://github.com/GianmarcoSabbatini" target="_blank" aria-label="GitHub di Gianmarco Sabbatini">GITHUB</a></li>
+                </ul>  
             </div>
         </div>
-     </footer>
+    </footer>
     </body>
     </html>
