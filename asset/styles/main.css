@@ -323,6 +323,9 @@ footer .footer-social ul li a {
   .nav-container {
     padding-bottom: 8px;
   }
+  .navItemActive {
+    background-color: #FFFFFF;
+  }
   /*======MAIN=======NAV=======FINE*/
   /*======MAIN=======PRESENTAZIONE=======INIZIO*/
   section.presentazione .presentazione-titolo {
@@ -401,6 +404,10 @@ footer .footer-social ul li a {
   }
   section.progetti .container-grid .container-projects .bodyM {
     margin-bottom: 8px;
+  }
+  section.progetti .container-grid .container-projects ul li {
+    margin-right: 8px;
+    font-size: 12px;
   }
   /*======MAIN=======PROGETTI=======FINE*/
   /*======MAIN=======SU DI ME=======INIZIO*/
@@ -527,6 +534,27 @@ footer .footer-social ul li a {
   }
   /*======CONTATTAMI=======FINE*/
 }
+@media (max-width: 375px) {
+  .myName span {
+    font-size: 16px;
+  }
+  .menu-button {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+  section.progetti .container-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  section.suDiMe .container-schede {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  main section.hero div h1 {
+    font-size: 32px;
+  }
+  main section.hero a {
+    font-size: 18px;
+  }
+}
 section.hero div {
   border-bottom: 1px solid black;
   padding: 80px 0;
@@ -541,6 +569,7 @@ section.hero div h1 {
   text-align: left;
   font-weight: 400;
   padding-bottom: 36px;
+  overflow-wrap: break-word;
 }
 
 section.curriculum {
