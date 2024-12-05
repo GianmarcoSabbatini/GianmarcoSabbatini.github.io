@@ -318,6 +318,12 @@ footer .footer-social ul li a {
   font-family: "Space Grotesk";
 }
 
+#footerProgetti {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
 @media (max-width: 1024px) {
   /*======MAIN=======NAV=======INIZIO*/
   .nav-container {
