@@ -499,6 +499,9 @@ footer .footer-social ul li a {
     font-size: 18px;
     padding-bottom: 40px;
   }
+  #footerProgetti {
+    position: static;
+  }
   /*======MAIN=======FOOTER=======FINE*/
   /*======CONTATTAMI=======INIZIO*/
   section.form .container-form {
